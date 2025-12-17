@@ -1,0 +1,211 @@
+\chapter{Sequences and Series}
+
+\section{Introduction}
+
+In this lab, we will apply for loops to study sequences and series.
+If you already have programming experience, you can complete a
+challenge problem in lieu of some of the other problems: see the final
+problem for the details.
+
+\section{Preparation}
+
+This lab will rely on the material from Sections 1.2.1 to 1.2.4 of the
+Scientific Python Lecture notes.  Most of the problems can be
+completed using a simple functions containg a single for loop, such as
+in this function:
+\begin{python}
+  def loop(n):
+    for i in range(n):
+        print(i)
+\end{python}
+To run the code in the function, you call the function, usually in a different cell:
+\begin{python}
+loop(5)
+\end{python}
+
+\vskip 0.25cm
+\plot Create a new function:
+\begin{python}
+def mult(a,n):
+   # your code here ...
+\end{python}
+that prints the first n multiples of a.  For example \pyth{mult(3,4)} should output:
+\begin{python}
+3
+6
+9
+12
+\end{python}
+In future problems, we'll describe this output simply as 3, 6, 9, 12.
+We won't be picky about whitespace unless we discuss it explicitly.
+One way to complete this is to use the three arguments of
+\pyth{range(start,stop,step)}.
+
+\section{Fibonacci Sequence}
+
+The Fibonacci numbers are a sequence of numbers satisfying the
+recursion relationship:
+\begin{displaymath}
+F_{n+2} = F_{n} + F_{n+1}
+\end{displaymath}
+with $F_0=0$ and $F_1=1$.  The sequence is:
+\begin{displaymath}
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, \ldots
+\end{displaymath}
+This sequence can be generated numerically by an algorithm such as this one:
+\begin{algorithm}
+fa := 0 # set fa to 0
+fb := 1 # set fb to 1
+repeat n times: 
+   fc := fa + fb
+   print fc to screen
+   fa := fb
+   fb := fc
+\end{algorithm}
+Note that this is not python syntax.  What is the importance of the
+last two lines?  Would the algorithm work if we exchanged their order?\\
+
+\plot Use the algorithm described above to implement a new function
+\pyth{fib(n)} which prints the next $n$ Fibbonacci numbers after the
+initial 0 and 1.\\
+
+\section{Arithmetic Series}
+
+The finite arithmetic series
+\begin{displaymath}
+  S_n = \sum_{k=0}^{n} (a + kd) = a + (a+d) + (a+2d) + \ldots + (a+nd)
+\end{displaymath}
+sums to the average of the first and last terms times the number of terms:
+\begin{equation} \label{eqn:arithsum}
+S_n = (n+1)\frac{a + (a+nd)}{2}
+\end{equation}
+We will assume $a=d=1$ and calculate this finite series numerically using the following function:
+\begin{python}
+def arith(n):
+     sum = 0
+     for k in range(n):
+         sum = sum + 1 + k 
+         #print("k: ", k, "\t sum: ", sum)
+    return sum    
+\end{python}
+Type in this function and see how it works by uncommenting the print
+statement (delete the \# symbol that starts a comment) and calling it
+as \pyth{arith(5)}.  The use of print statements in a loop like this
+or at each stage of a calculation is a simple, effective and classic
+debugging technique.  You test your code with the print statements
+included, keeping n small so you don't fill your whole screen with
+output. Once your code is working, you comment out the unneeded print
+statements so that the interpreter ignores them and you no longer
+see the unneeded output.  Why not just delete them?  You can, but
+experience shows that if you do, you will need the line again shortly!\\
+
+\plot Obtain the sum of the first $n$ terms of arithmetic series with
+\pyth{sum = arith(n)} for three different values of $n$.  Each time,
+show that sum returned by the function matches the expected sum.
+
+\section{Geometric Series}
+\label{sec:geom}
+
+The geometric series
+\begin{displaymath}
+  \sum_{k=0}^{\infty} a r^k = a + ar + ar^2 + ar^3 + \ldots
+\end{displaymath}
+converges for $|r| < 1$ to:
+\begin{equation} \label{eqn:geomsum}
+  \frac{a}{1-r}.
+\end{equation}
+We will demonstrate this numerically.\\
+
+\plot Implement a function \pyth{geom(a,r,n)} which calculates sum of the first $n$ terms of the geometric series with $k$th term $a r^k$.  Show that it agrees with Eqn.~\ref{eqn:geomsum} for $a=2$, $r=0.5$  $n=100$.
+\\
+
+\plot Call you geometric series function again for $a=3$, $r=0.8$ and $n=100$.  Compare with the expected output calculate within python and with pencil and paper.  Do they agree exactly?  If not, do they agree within the floating point precision?
+\\
+
+\plot Now compare your calculated sum with Eqn.~\ref{eqn:geomsum} for $a=1$, $r=-0.9$  $n=100$.  How is the agreement?  Increase $n$ and see what happens.  Why do you suppose this series is slower to converge?\\
+
+\section{Refinements}
+
+There are a few refinements you can make to your code.  Don't change
+your working code from previous examples!  Instead, copy the previous
+version to a new cell and make your refinements there.  You don't even
+need to change the name of the function, Python will happily overwrite
+the old function implementation when it reaches the cell with the new
+version.  Make these code improvements:\\
+
+\plot  Improve your Fibbonacci function so that prints the
+first $n$ numbers including the initital two numbers ``0'' and ``1''.
+Make sure it works properly for $n=0$, $n=1$, $n=2$, and so on.\\
+
+\plot  Extend the Arithmetic series function to include
+parameters $a$ and $d$.  Show that it works.\\
+
+\section{Maclaurin series}
+\label{sec:mac}
+A Maclaurin series can be used to approximate a function by calculating its derivative close to the point of interest.
+
+\begin{displaymath}
+f(x) = f(0) + f'(0) x +\frac{f''(0)}{2!}x^{2} + \frac{f'''(0)}{3!}x^{3}...
+\end{displaymath}
+
+This is equivalent of approximate a function with a polynomial. Larger is the polynomial, better is the approximation even at points of the function far away from the referent point. 
+
+
+Let's star defining a function \pyth{f(x) = cos(x)}.
+For this exercise, we will use the numpy package that we will use extensively later in the course. 
+
+\begin{python}
+import numpy as np
+def myfunc(x):
+    return np.cos(x)    
+\end{python}
+
+Let's now define a second order polynomial that approximate this function (around 0) and let's write a python function with this polynomial. To find this function you compute the derivatives of f(x) and can use the Maclaurin series:
+\begin{displaymath}
+P(x) = 1 - \frac{1}{2!}x^{2} 
+\end{displaymath}
+
+\begin{python}
+def polynomialorder2(x):
+    return  1 - 1/2. * x**2 
+\end{python}
+
+
+\plot Compute the derivative of the function f(x) around the point 0 and define the polynomial that approximate the function f(x) with order 4, 6 and 8. Define a new function for each of these polynomials. \\
+
+
+\plot Investigate how good is your polynomial or second order to approximate f(x) = cos(x) when you start to go far away from x=0. In particular, fix a value for x (x = 1) and compare in absolute value the difference between  
+\pyth{f(x) - polynomialorder2(x)}  
+
+\begin{python}
+x = 1 
+print(np.abs(myfun(x) - polynomialorder2(x)))
+\end{python}
+
+\plot  Investigate how good are the polynomial of orders 2 (P2), 4 (P4), 6 (P6) and 8 (P8) to approximate the function f(x). Find how far can you go with x and still have difference between f(x) and your polynomials (P2,P4,P6,P8) $<$ than .1. 
+
+
+\section{Fibonacci Integer Right Triangles}
+
+Starting with the number 5, every second Fibonacci number is the
+length of the hypotenuse of a right triangle with integer sides.  The
+first two are:
+\begin{displaymath}
+5^2 = 3^2 + 4^2  
+\end{displaymath}
+and 
+\begin{displaymath}
+13^2 = 5^2 + 12^2.  
+\end{displaymath}
+Furthermore, from the second triangle onward, the middle side is the sum of the lengths of the sides of the previous triangle, for example:
+\begin{displaymath}
+12 = 3 + 4 + 5.  
+\end{displaymath}
+
+\vskip 0.25cm
+\plot (Optional Challenge) Use numerical methods to
+explicitly verify these properties for the first $n$ Fibonacci integer
+right triangles.\\
+
+If you would prefer, you may submit the Optional Challenge problem plus the
+problems from Section~\ref{sec:geom} and Section \ref{sec:mac} to complete the assignment.

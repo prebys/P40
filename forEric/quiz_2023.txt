@@ -1,0 +1,153 @@
+- Place lines into an order which prints the value of 3*(2+3):
+A) d=3*c
+B) print(d)
+C) a=2
+D) b=3
+E) c=a+b
+___________________
+- Print every odd number less than 20.
+A) i=1
+B) i= i + 2
+C) print(i)
+D) n=20
+E) while(i<n):
+____________________________
+- Define a function that find a maximum in a sequence 
+A) max_item = item
+B) for item in seq:
+C) def find_max(seq):
+D) return max_item
+E) max_item = 0
+F) if item > max_item:
+____________________________
+- Write a function that takes in an input string and returns True if the string is a palindrome and False otherwise.
+A) elif string[0] != string[-1]:
+B) return False
+C) return True
+D) def palindrome(string):
+E) return palindrome(string[1:-1])
+F) if len(string) < 2:
+______________________________________
+
+- Write a function that takes in as input two numbers, x and y, and returns the sum of all numbers between x and y (inclusive).
+A) total = total + i
+B) def sum_all_numbers(x, y):
+C) return total 
+D) sum = sum_all_numbers(4, 9)
+E) total = 0
+F) for i in range(x, y + 1):
+_____________________________________
+- build a dictionary
+A) wands['core'] = 'Phoenix Feather’
+B) }
+C) ‘Wood’:'yew',
+D) ‘Length':13.5
+E) print('The wands core is ‘,wands['core'])
+F) wands = {
+_________________________________
+- Write a function that given a string, returns a dictionary with the letter as keys of the dictionary and the number of times the letter appears as values.
+A)  return dictionary
+B)  dictionary = {}
+C)  def char_freq(str):
+D)  dictionary[letter] = 1
+E) for letter in str:
+F)  dictionary[letter] += 1       
+G) if letter in dictionary:
+H) else:
+_______________________________
+- find vowels and consonants
+A) vowels=‘aeiou’
+B) print('this letter is a consonant’)
+C) def search_vowels(letter):
+D) else:
+E) print('this letter is a vowel’)
+F) if letter in vowels:
+_________________________________
+- Write a recursive function that computes the factorial of a given number
+A) if n == 1:
+B) else:
+C) return n
+D) def factorial(n):
+E) return result
+F) result = n * factorial(n-1)
+__________________________________
+_ Write an exponent(num, power) function that takes two arguments (a number and an exponent) and returns the computed result (6 lines of code). 
+A) result = 1
+B) def exponent(num, power)
+C) result = 0 
+D) while power > 0:
+E) result = result * 2
+F) power = power - 1
+G) return result 
+H) result = result * num
+I def exponent(num, power):
+J) result = result * power
+________________________________
+Given two lists, sort the value of both lists using the first/second list as reference list.
+A) a, b  = np.array(a)[ind], np.array(b)[ind]
+B) ind = np.argsort(a)
+C) else:
+D) def sortlist(a, b, reference_list=1):
+E) return a,b
+F) ind = np.argsort(b)
+G) if reference_list==1:
+______________________________________
+- Define a function that compute the average of N random numbers
+A) import random as r
+B) mean = total/N
+C) total, i = 0, 0
+D) total+=r.randint(1,100)
+E) while i< N:
+F) i += 1
+G) return mean
+H) def mean(N):
+____________________________________
+- This program will compute pi with a Montecarlo simulation
+
+import random
+NUMBER_OF_TRIALS = 1000000 
+numberOfHits = 0
+      ——————————————
+
+A) if x**2  + y**2 <= 1:
+B) x = random.random() * 2 - 1
+C) for i in range(NUMBER_OF_TRIALS):
+D) numberOfHits += 1
+E) print("PI is", pi)
+F) pi = 4 * numberOfHits /NUMBER_OF_TRIALS
+G) y = random.random() * 2 - 1
+_________________________________________
+
+- Print the first five positive integers not divisible by 2 or 3.
+A) i=0
+B) n=0
+C) i=i+1
+D) n=n+1
+E) while(n<5):
+F) if (i%2!=0) and (i%3!=0):
+G)  print(i)
+_______________________________
+- Game: guess the number
+A) print("Too low”)
+B) print("Well done, you guess correctly.")  
+C) guess = int(input("Guess an integer number: "))
+D) guess = int(input("Try again: "))
+E) while guess != number:
+F) print("Too high”)
+G) if guess > number:
+H) else:
+I) number = np.random.randint(low=0,high=10) 
+_________________________________
+- Write a function that given a number return ‘True’ if the number is a prime number       
+def primenumber(number):
+
+1) break
+2) divisor = 2
+3) isPrime = False
+4) isPrime = True
+5) while divisor <= number / 2:
+6) divisor += 1
+7) if number % divisor == 0:
+
+return isPrime
+_____________________________________

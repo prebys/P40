@@ -1,0 +1,81 @@
+\contentsline {chapter}{\numberline {1}Installation of Scientific Python}{4}{}%
+\contentsline {section}{\numberline {1.1}Introduction}{4}{}%
+\contentsline {section}{\numberline {1.2}Installing Miniconda3}{4}{}%
+\contentsline {subsection}{\numberline {1.2.1}Installing under Windows}{5}{}%
+\contentsline {subsection}{\numberline {1.2.2}Installing on a Chromebook}{5}{}%
+\contentsline {subsection}{\numberline {1.2.3}Installing Miniconda3 under Linux or macOS}{5}{}%
+\contentsline {section}{\numberline {1.3}Installing the Physics 40 Conda Environment}{6}{}%
+\contentsline {section}{\numberline {1.4}Starting a Jupyter notebook}{6}{}%
+\contentsline {section}{\numberline {1.5}Submitting your assignment}{9}{}%
+\contentsline {chapter}{\numberline {2}Binary Numbers}{10}{}%
+\contentsline {section}{\numberline {2.1}Introduction}{10}{}%
+\contentsline {section}{\numberline {2.2}Preparation}{10}{}%
+\contentsline {section}{\numberline {2.3}Binary Representation of Integers}{11}{}%
+\contentsline {section}{\numberline {2.4}Binary Representation of Real Numbers}{13}{}%
+\contentsline {section}{\numberline {2.5}Other Data Types}{15}{}%
+\contentsline {chapter}{\numberline {3}Sequences and Series}{17}{}%
+\contentsline {section}{\numberline {3.1}Introduction}{17}{}%
+\contentsline {section}{\numberline {3.2}Preparation}{17}{}%
+\contentsline {section}{\numberline {3.3}Fibonacci Sequence}{18}{}%
+\contentsline {section}{\numberline {3.4}Arithmetic Series}{18}{}%
+\contentsline {section}{\numberline {3.5}Geometric Series}{19}{}%
+\contentsline {section}{\numberline {3.6}Refinements}{19}{}%
+\contentsline {section}{\numberline {3.7}Maclaurin series}{20}{}%
+\contentsline {section}{\numberline {3.8}Fibonacci Integer Right Triangles}{20}{}%
+\contentsline {chapter}{\numberline {4}The Quadratic Equation and Prime Numbers}{22}{}%
+\contentsline {section}{\numberline {4.1}Introduction}{22}{}%
+\contentsline {section}{\numberline {4.2}Preparation}{22}{}%
+\contentsline {section}{\numberline {4.3}Quadratic Formula}{23}{}%
+\contentsline {section}{\numberline {4.4}Prime Numbers}{24}{}%
+\contentsline {section}{\numberline {4.5}The Lucky Number of Euler}{25}{}%
+\contentsline {chapter}{\numberline {5}Arrays, Plotting and Chaos}{26}{}%
+\contentsline {section}{\numberline {5.1}Introduction}{26}{}%
+\contentsline {section}{\numberline {5.2}Preparation}{26}{}%
+\contentsline {section}{\numberline {5.3}Plotting with Scentific Python}{27}{}%
+\contentsline {section}{\numberline {5.4}Plot and Distributions}{29}{}%
+\contentsline {section}{\numberline {5.5}The Logistics Map}{29}{}%
+\contentsline {chapter}{\numberline {6}Differentiation and Projectile Motion}{32}{}%
+\contentsline {section}{\numberline {6.1}Introduction}{32}{}%
+\contentsline {section}{\numberline {6.2}Preparation}{32}{}%
+\contentsline {section}{\numberline {6.3}Numerical Differentiation}{33}{}%
+\contentsline {section}{\numberline {6.4}Projectile Motion}{34}{}%
+\contentsline {section}{\numberline {6.5}Projectile Motion with Drag}{36}{}%
+\contentsline {chapter}{\numberline {7}Pendulum Motion}{37}{}%
+\contentsline {section}{\numberline {7.1}Introduction}{37}{}%
+\contentsline {section}{\numberline {7.2}Preparation}{37}{}%
+\contentsline {section}{\numberline {7.3}Pendulum Motion}{38}{}%
+\contentsline {section}{\numberline {7.4}Small Angle Approximation}{39}{}%
+\contentsline {section}{\numberline {7.5}The Failure of the Euler Method}{40}{}%
+\contentsline {section}{\numberline {7.6}The Verlet Method}{41}{}%
+\contentsline {chapter}{\numberline {8}Roots and Integrals}{43}{}%
+\contentsline {section}{\numberline {8.1}Introduction}{43}{}%
+\contentsline {section}{\numberline {8.2}Roots of a Linear Function}{43}{}%
+\contentsline {section}{\numberline {8.3}Bisection Method}{44}{}%
+\contentsline {section}{\numberline {8.4}Newton's Method}{44}{}%
+\contentsline {section}{\numberline {8.5}Secant Method}{45}{}%
+\contentsline {section}{\numberline {8.6}Roots of a Quadratic Function}{45}{}%
+\contentsline {section}{\numberline {8.7}Particle in a Finite Potential Well}{46}{}%
+\contentsline {section}{\numberline {8.8}Trapezoid Method}{48}{}%
+\contentsline {section}{\numberline {8.9}Iterative Trapezoid Method}{49}{}%
+\contentsline {section}{\numberline {8.10}Period of a Pendulum}{49}{}%
+\contentsline {section}{\numberline {8.11}Romberg Integration}{50}{}%
+\contentsline {chapter}{\numberline {9}Monte Carlo Simulation}{52}{}%
+\contentsline {section}{\numberline {9.1}Introduction}{52}{}%
+\contentsline {section}{\numberline {9.2}Preparation}{52}{}%
+\contentsline {section}{\numberline {9.3}Generating random numbers}{53}{}%
+\contentsline {section}{\numberline {9.4}Probability Density Functions and Histograms}{54}{}%
+\contentsline {section}{\numberline {9.5}Calculating the value of $\pi $}{58}{}%
+\contentsline {section}{\numberline {9.6}Monte Carlo integration}{61}{}%
+\contentsline {chapter}{\numberline {10}Ideal Gas}{63}{}%
+\contentsline {section}{\numberline {10.1}Introduction}{63}{}%
+\contentsline {section}{\numberline {10.2}Ideal Gas in Two Dimensions}{63}{}%
+\contentsline {section}{\numberline {10.3}System of Units}{65}{}%
+\contentsline {section}{\numberline {10.4}Collision Model}{66}{}%
+\contentsline {section}{\numberline {10.5}Implementing the Collision Model}{67}{}%
+\contentsline {section}{\numberline {10.6}Initializing the Simulated Ideal Gas}{70}{}%
+\contentsline {section}{\numberline {10.7}Collisions of an Ideal Gas}{71}{}%
+\contentsline {section}{\numberline {10.8}Temperature of an Ideal Gas}{71}{}%
+\contentsline {section}{\numberline {10.9}The Maxwell-Boltzmann Distribution}{72}{}%
+\contentsline {section}{\numberline {10.10}Ideal Gas Law}{72}{}%
+\contentsline {chapter}{\numberline {11}Animation of Planetery Motion}{74}{}%
+\contentsline {section}{\numberline {11.1}Introduction}{74}{}%
